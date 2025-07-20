@@ -813,80 +813,260 @@ polyline {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
-    .row h1 {
-        /* padding-top: 5vw; */
-        font-size: 19vw;
-        padding-left: 8px;
-    }
-
-    #loader h1 {
-        font-size: 10vw;
-    }
-
-    #imgleft h4 {
-        font-size: 7vw;
-    }
-
-    #svgImg h3 {
-        font-size: 14vw;
-    }
-
-    #svgImg h4 {
-        font-size: 12vw;
-    }
-
-    #headingSkills {
-        font-size: 7vw;
-    }
-
-    .elem h1 {
-        font-size: 4vw;
-    }
-
-    .elem img {
-        width: 50px;
-        height: 50px;
-    }
-
-    #textAbout p {
-        font-size: 3.8vw;
-    }
+    
+#miniCursor {
+   display: none;
 }
 
-/* Landscape mobile*/
-@media screen and (max-height: 500px) and (orientation: landscape) {
-    #home {
-        height: auto;
-        min-height: 100vh;
-    }
+#loader {
+    width: 100%;
+    height: 100vh;
+ 
+}
 
-    .row {
-        margin-top: 3vw;
-    }
 
-    #imaginary {
-        margin-top: 8vw;
-    }
+#loader #topHeading {
+    display: none;
+}
 
-    .elem h1 {
-        font-size: 6vw;
-    }
 
-    .elem img {
-        width: 60px;
-        height: 60px;
-    }
+#loader h1 {
+    font-size: 6vw;
+}
 
-    #about {
-        margin-top: 50px;
 
-    }
+#green {
+    height: 0vh;
+}
 
-    #textAbout p {
-        font-size: 3.5vw;
-    }
+#home #nav {
+    height: 100px;
+    width: 100%;
+    padding: 1vw 5vw;
+
+}
+
+#nav a {
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+
+#home .row {
+    /* margin-top: 11vw; */
+    width: 100%;
+    padding: 0.5vw 2vw;
+    padding-left: 6vw;
+    align-items: center;
+
+}
+
+#home .row h1{
+    font-size: 17vw;
+
+}
+
+.row .text {
+    margin-top: 30vw
+}
+
+.row h5 {
+    font-size: 7px;
+}
+
+
+#home .row #svgImg{
+    order: -30;
+}
+
+
+#home .row #svgImg h3{
+    font-size: 11vw;
+
+}
+
+#home .row #svgImg h4 {
+    font-size: 9vw;
+    font-weight: 300;
+    margin-top: 14%;
+
+}
+
+#main #imaginary {
+    width: 100%;
+    height: 65vh;
+    padding: 0vw 5vw;
+flex-direction: column;
+display: flex;
+justify-content: flex-end;
+/* order: -9; */
+
+}
+
+#imaginary #imgleft {
+    width: 30%;
+    height: auto;
+    color: #A3A3A3;
+    padding: 5vh 17vw;
+    order: -90;
+
+}
+
+#imaginary #imgleft h4 {
+    font-size: 6.1vw;
+    font-weight: 500;
+
+}
+
+
+
+#imaginary #imgRight {
+    margin-top: 18vh;
+    width: 70%;
+    height: 300px;
+    z-index: 999;
+
+
+}
+
+#imaginary #imgRight .imgcntr {
+    width: 55vw;
+    height: 35vh;
+    border-radius: 1.5vw;
+
+}
+
+
+
+ #main #headingSkills {
+    opacity: 0.7;
+    font-size: 4.5vw;
+    padding: 0vw 10.5vw;
+    margin-top: 17vh;
+    font-weight: 100;
+    /* margin-bottom:-10vw ; */
+
+}
+
+#skillPage {
+    width: 100%;
+    height: 50vh;
+    padding-top: 7vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    color: #fff;
+
+}
+
+
+
+#skillPage .elem {
+    padding: 2.7vh 2vw;
+    border-top: 1px solid #888;
+
+}
+
+.elem h1 {
+    font-size: 2.9vw;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+
+
+#skillPage .elem img {
+ 
+    width: 40px;
+    height: 40px;
+}
+
+
+#main #about {
+    margin-top:10vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    padding: 10vw 5vw;
+
+}
+
+#main #about img{
+    width: 80px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 35%;
+    margin-top: 150px;
+
+}
+
+#about #textAbout {
+    width: 20rem;
+    padding-left: 10vw;
+    padding-top: 0vw;
+
+}
+
+#textAbout h5 {
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+#about #textAbout p {
+    margin-bottom: 25px;
+    font-size: 2.4vw;
+}
+
+#textAbout a {
+    padding: 4px 13px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+
+}
+
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    width: 100%;
+}
+
+#footer #footerLeft {
+    gap: 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+#footer #footerRight {
+    display: flex;
+    gap: 30px;
+}
+
+#footer a {
+    /* text-transform: capitalize; */
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+}
+
+
+#footerRight img {
+    width: 23px;
+    height: 23px;
+}
 
 
 }
